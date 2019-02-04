@@ -52,7 +52,7 @@ class Duration {
      */
     static getDuration(filename) {
         var fd = fs.openSync(filename, 'r'),
-            buffer = new Buffer(100),
+            buffer = Buffer.alloc(100),
             block = fs.readSync(fd, buffer, 0, 100, 0),
             stat = fs.statSync(filename),
             duration = 0;

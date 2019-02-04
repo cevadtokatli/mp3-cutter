@@ -20,8 +20,8 @@ class MP3Cutter {
 
         var fd = fs.openSync(src, 'r');
         try {
-            var buffer = new Buffer(end-start);
-            fs.readSync(fd, buffer, 0, buffer.length, start);
+            var buffer = Buffer.alloc(end-start);
+            fs.readSync(fd, buffer, 0, buffer.length, parseInt(start));
             fs.writeFileSync(o.target, buffer);
         } catch(e) {
             console.error(e);
