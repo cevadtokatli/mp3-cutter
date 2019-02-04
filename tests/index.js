@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 const fs = require('fs');
-const Duration = require('../src/duration.js');
-const MP3Cutter = require('../src/index.js');
+const Duration = require('../lib/duration.js');
+const MP3Cutter = require('../lib/index.js');
 var files;
 
 before(() => {
