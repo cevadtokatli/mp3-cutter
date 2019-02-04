@@ -3,3 +3,4 @@ node_modules/
 tests/files/cut/
 demo/
 yarn.lock
+package-lock.json
