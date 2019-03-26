@@ -15,7 +15,7 @@ describe('test duration', () => {
     it("values returning from the 'getDuration' method should be equal to the ones in the array", done => {
         files.forEach(f => {
                 var d = Duration.getDuration('tests/files/'+f.name);
-                expect(f.duration).to.equal(parseInt(d));
+                expect(f.duration).to.equal(parseInt(d.duration));
         });
         done();
     });
@@ -36,7 +36,7 @@ describe('test cutter', () => {
                 end: f.end 
             });
             var d = Duration.getDuration(dir+'/'+f.name);
-            expect(f.newDuration).to.equal(parseInt(d));
+            expect(f.newDuration).to.equal(parseInt(d.duration));
         });
         done();
     });
