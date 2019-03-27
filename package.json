@@ -1,6 +1,6 @@
 {
   "name": "mp3-cutter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "MP3 Cutter is a JavaScript library and a NodeJS module that allows you to cut your MP3 files by seconds.",
   "keywords": [
     "node",
